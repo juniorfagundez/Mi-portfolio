@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+    <div class="loaderC">
+    </div>
     <head>
         <link rel="shortcut icon" href="fj logo.png">
         <link rel="Stylesheet" href="STYLE.CSS">
@@ -8,62 +10,58 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
     </head>
-    <div>
+
+    <body id="fondo-contacto" onload="myFunction()" style="margin:0;">
+        <div id="loaderC">
+        </div>
+            <div style="display:none;" id="myDiv" class="animate-bottom">
+            <div>
+                <script>
+                    var myVar;
+                    function myFunction() 
+                    {myVar = setTimeout(showPage, 1000);}
+                
+                    function showPage() 
+                    {document.getElementById("loaderC").style.display = "none";
+                    document.getElementById("myDiv").style.display = "flex";}
+                </script>  
+            <div class="grid-container">
+            <div>
         <header class="encabezado">
             <h1>Contacto</h1>
         <img class="logo" src="./jf-logo-with-triangle-shape-and-circle-rounded-design-template-700-223601414.jpg">
         <ul> 
             <a style="color: rgb(255, 255, 255);" href="./Inicio.html">Inicio</a>
         </ul>
-    </header>
+        </header>
+        <p class="textcontacto" style="color:WHITE">En esta pagina podras dejarme un mensaje</p>
+        <article>
+               
+                <form id="formulario-contacto" class="form" method="post" action="contact-form-process.php" enctype=”multipart/form-data” name=”EmailForm”>
+                    Nombre:<br>
+                    <input type="text" size="19" name="Contact-Name"><br><br>
+                    Email:<br>
+                    <input type="email" name="Contact-Email"><br><br> 
+                    Mensaje:<br> 
+                    <textarea name="Contact-Message" rows="6″ cols="20″>
+                    </textarea><br><br> 
+                    <input type="submit" value="Enviar Mensaje">
+                </form>
+        </article>
 
 
-
-</div>
-
-    <body id="fondo-contacto">
-        <P class="textcontacto" style="color:WHITE">En esta pagina podras dejarme un mensaje</P>
-        <form id="formulario-contacto" class="fcf-form-class" method="post" action="contact-form-process.php">
-            <div class="fcf-form-group">
-                <label for="Name" class="fcf-label">Tu nombre</label>
-                <div class="fcf-input-group">
-                    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-           
-            <div class="fcf-form-group">
-                <label for="Email" class="fcf-label">Tu email</label>
-                <div class="fcf-input-group">
-                    <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-              
-    
-            <div class="fcf-form-group">
-                <label for="Message" class="fcf-label">Tu mensaje</label>
-                <div class="fcf-input-group">
-                    <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-            
-            
-       <div class="fcf-form-group">
-                <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Enviar mensaje</button>
-         
+        <footer>
+            <div id="footer-contacto">
+                <a title="Facebook icon" href="https://www.facebook.com/junior.fagundez.3/">
+                    <img src="./2021_Facebook_icon.svg.png" width="40" height="40" alt="Facebook icon"/>
+                </a> 
+                <a title="Github icon" href="https://github.com/juniorfagundez">
+                    <img src="./25231.png" width="40" height="40" alt="Github icon">
+                </a> 
+                <a title="Linkedin icon" href="https://www.linkedin.com/in/junior-fagundez-2aa8b123b/">
+                    <img src="./174857.png" width="40" height="40" alt="Linkedin icon">
+                </a> 
             </div>
-    
-            <div class="fcf-credit" id="fcf-credit">
-           
-            </div>
-    
-        </form>
-         
-    </body>
-
-    <div id="footer-contacto">
-        <a title="Facebook icon" href="https://www.facebook.com/junior.fagundez.3/">
-            <img src="./2021_Facebook_icon.svg.png" width="40" height="40" alt="Facebook icon"/>
-        </a> 
-        <a title="Github icon" href="https://github.com/juniorfagundez">
-            <img src="./25231.png" width="40" height="40" alt="Github icon">
-        </a> 
-        <a title="Linkedin icon" href="https://www.linkedin.com/in/junior-fagundez-2aa8b123b/">
-            <img src="./174857.png" width="40" height="40" alt="Linkedin icon">
-        </a> 
-
-    </div>
+        </footer>
+    </body> 
 </html>
