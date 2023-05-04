@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div class="loaderC">
+    </div>
+    <head>
+        <link rel="shortcut icon" href="../Imagenes/jf-logo-with-triangle-shape-and-circle-rounded-design-template-700-223601414.jpg">
+        <link rel="Stylesheet" href="../Codigo/style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body onload="myFunction()" style="margin:0;">
+        <div id="loaderC">
+        </div>
+            <div style="display:none;" id="myDiv" class="animate-bottom">
+            <div>
+                <script>
+                    var myVar;
+                    function myFunction() 
+                    {myVar = setTimeout(showPage, 1000);}
+                
+                    function showPage() 
+                    {document.getElementById("loaderC").style.display = "none";
+                    document.getElementById("myDiv").style.display = "inline";}
+                </script>  
+            <div class="grid-container">
+            <div>
+        <header class="encabezado">
+            <a href="../Codigo/index.html"><img class="logo" src="../Imagenes/jf-logo-with-triangle-shape-and-circle-rounded-design-template-700-223601414.jpg"></a>
+                <ul>  
+                    <a style="color: WHITE;" href="../Codigo/proyectos.html">Proyectos</a>
+                    <a style="color: white" href="../Codigo/sobre-mi.html " >Sobre mi</a>
+                    <a style="color: white" href="../Codigo/preguntas-frecuentes.html">Preguntas frecuentes</a>
+                    <a style="color: white" href="../Codigo/contacto.HTML">Contacto</a>
+                </ul>
+        </header>
+        <main>
+            <h1 class="textcontacto" style="color:rgb(77, 75, 75)">En esta pagina podras dejarme un mensaje</h1>
+            <article class="formulario">
+                    <form id="formulario-contacto" class="form" method="post" action="contact-form-process.php" enctype=”multipart/form-data” name=”EmailForm”>
+                        Nombre:<br>
+                        <input type="text" size="19" name="Contact-Name"><br><br>
+                        Email:<br>
+                        <input type="email" name="Contact-Email"><br><br> 
+                        Mensaje:<br> 
+                        <textarea name="Contact-Message" rows="6″ cols="20″>
+                        </textarea><br><br> 
+                        <input type="submit" class="boton" value="Enviar Mensaje">
+                    </form>
+            </article>
+        </main>
+        <footer>
+            <div class="footer">
+                <a title="Facebook icon" href="https://www.facebook.com/junior.fagundez.3/">
+                    <img src="../Imagenes/2021_Facebook_icon.svg.png" width="40" height="40" alt="Facebook icon"/>
+                </a> 
+                <a title="Github icon" href="https://github.com/juniorfagundez">
+                    <img src="../Imagenes/25231.png" width="40" height="40" alt="Github icon">
+                </a> 
+                <a title="Linkedin icon" href="https://www.linkedin.com/in/junior-fagundez-2aa8b123b/">
+                    <img src="../Imagenes/174857.png" width="40" height="40" alt="Linkedin icon">
+                </a> 
+            </div>
+        </footer>
+    </body> 
+</html>

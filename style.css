@@ -1,0 +1,204 @@
+
+* {     margin: 0px;
+        padding: 0px;}
+
+header, article, footer {display: block;}
+
+html, body    {max-height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        background-size: cover;
+        text-align: center;
+        margin:0;
+        padding:0; 
+        height: auto; 
+        max-width: 100%;
+        }
+
+.encabezado {grid-area: header;
+        background-color: black;
+        opacity: 0.8;
+        display: inline-block;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: static; 
+        width: 100%;
+        height: 150px;
+}
+
+.bienvenidos {
+        opacity: 0.8;
+}
+
+.textcontacto { padding: 80px;
+                opacity: 0.8;
+                
+
+    }
+
+.logo{ right: 0%;
+        position: relative;
+        width: 150px;
+        padding: 0px;
+        height: auto;
+}
+    
+ul     {text-justify: 50px;
+        display: flex;
+        justify-content: right;
+        margin-top: 0;
+        display: inline-block;
+        padding: 0px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        border-top:0;
+        border-color: rgb(248, 242, 242);
+        list-style: none;
+        font-family: system-ui;
+        }
+
+main {grid-area: main;
+        padding-top: 100px;
+        height: auto;
+        position: static;
+        min-width: 100px;
+        display: flex;
+        margin: 0 auto;
+        text-align: left;
+        align-items: center;}
+
+h1, h3 {    text-align: center;
+        color: rgb(179, 179, 179);
+        font-family: system-ui;
+        font-weight: bold;
+        font-size: xx-large;
+        float: left;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+        background-color: transparent;
+        border: 10px;
+        opacity: 0.8;
+        padding: 10px;
+        position: relative; 
+        padding-left: 20px;
+        height: auto;
+        margin-left: 150px} 
+
+h2 {    height: auto;
+        }
+
+.responsive {   margin-left: -100px;
+                margin-top: -100px;}
+
+p       {text-align: center;
+        color: rgb(83, 83, 83);
+        font-family: 'Franklin Gothic Medium';
+        font-weight: bold;
+        font-size: xx-large;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+        background-color: transparent;
+        border: 10px;
+        opacity: 0.8;
+        padding: 10px;
+        position: absolute; 
+        text-shadow: 2px 4px 4px rgba(32, 32, 32, 0.6);
+        align-content: end;
+        }  
+
+a       {padding-right: 15px;
+        opacity: 1;
+        width: 110px;
+        height: 110px;
+        }
+
+.footer {grid-area: footer;
+        flex-shrink: 0;
+        background-color: rgb(137, 137, 137);
+        position: absolute; 
+        bottom: 0;
+        right: 0;
+        top: 100vh;
+        width: 100%;
+        height: 60px; 
+        padding-top: 15px;
+        opacity: 1 }                  
+
+.proximamente {padding-top: 10px;
+padding-left: 50px;}
+        
+.grid-container {display: grid;
+                gap: 10px;
+                grid-template-areas: 
+                "header"
+                "main"
+                "footer";
+}
+
+@media (max-width:900px){
+        .grid-container {
+                grid-template-areas: 
+                "encabezado" 50px
+                "main article" 150px
+                "footer" 50px ;
+        }
+        }
+
+
+        
+.formulario { align-items: center;
+        justify-content: center;
+        font-family: 'Franklin Gothic Medium';
+        color:rgb(165, 166, 167);
+        position: relative;
+        padding-left: 150px;
+        }
+
+.boton { align-items: center;
+        justify-content: center;
+        font-family: 'Franklin Gothic Medium';
+        color:rgb(165, 166, 167)
+        } 
+
+#loader {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                z-index: 1;
+                width: 120px;
+                height: 120px;
+                margin: -76px 0 0 -76px;
+                border: 16px solid #f3f3f3;
+                border-radius: 50%;
+                border-top: 16px solid #2a2a2b;
+                -webkit-animation: spin 2s linear infinite;
+                animation: spin 1s linear infinite;
+              }
+
+#loaderC {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                z-index: 1;
+                width: 120px;
+                height: 120px;
+                margin: -76px 0 0 -76px;
+                border: 16px solid #f3f3f3;
+                border-radius: 50%;
+                border-top: 16px solid #242424;
+                -webkit-animation: spin 2s linear infinite;
+                animation: spin 1s linear infinite;
+              }
+              
+@-webkit-keyframes spin {
+                0% { -webkit-transform: rotate(0deg); }
+                100% { -webkit-transform: rotate(360deg); }
+              }
+              
+@keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+              }

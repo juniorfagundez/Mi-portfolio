@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div class="loader"></div>
+    <head>
+        <link rel="Stylesheet" href="../Codigo/style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0", viewport-fit=cover>
+        <title>Document</title>
+        <link rel="shortcut icon" href="../Imagenes/jf-logo-with-triangle-shape-and-circle-rounded-design-template-700-223601414.jpg">     
+    </head>
+    <body onload="myFunction()" style="margin:0;">  
+            <div id="loader">
+            </div>
+            <div style="display:none;" id="myDiv" class="animate-bottom">
+            <div>
+            <script>
+                var myVar;
+                
+                function myFunction() {
+                myVar = setTimeout(showPage, 1000);
+                }
+                
+                function showPage() {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("myDiv").style.display = "block";
+                }
+            </script>
+    <div class="grid-container">
+        <header class="encabezado">
+            <a href="../Codigo/index.html"><img class="logo" src="../Imagenes/jf-logo-with-triangle-shape-and-circle-rounded-design-template-700-223601414.jpg"></a>
+                <ul>  
+                    <a style="color: WHITE;" href="../Codigo/proyectos.html">Proyectos</a>
+                    <a style="color: white" href="../Codigo/sobre-mi.html " >Sobre mi</a>
+                    <a style="color: white" href="../Codigo/preguntas-frecuentes.html">Preguntas frecuentes</a>
+                    <a style="color: white" href="../Codigo/contacto.HTML">Contacto</a>
+                </ul>
+        </header>
+        <main class="main">
+            <article>
+                <h1>Hola!! Soy Junior, estudiante de 
+                    Frontend Development.</h1>
+                <h2> <img src="../Imagenes/B2077537-59D5-41E5-B90C-E7CB208E52AB.png" alt="Memoji" class="responsive"></h2>
+                <p> Gracias por visitar mi pagina, aqui podras conocer un poco mas de mi</p>
+            </article>   
+        </main>
+        <footer>
+            <div class="footer">
+                <a title="Facebook icon" href="https://www.facebook.com/junior.fagundez.3/">
+                    <img src="../Imagenes/2021_Facebook_icon.svg.png" width="40" height="40" alt="Facebook icon"/>
+                </a> 
+                <a title="Github icon" href="https://github.com/juniorfagundez">
+                    <img src="../Imagenes/25231.png" width="40" height="40" alt="Github icon">
+                </a> 
+                <a title="Linkedin icon" href="https://www.linkedin.com/in/junior-fagundez-2aa8b123b/">
+                    <img src="../Imagenes/174857.png" width="40" height="40" alt="Linkedin icon">
+                </a> 
+            
+            </div>  
+        </footer>
+    </div>
+    </body>
+</html>
